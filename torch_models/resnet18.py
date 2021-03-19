@@ -52,7 +52,7 @@ class FullyConvolutionalResnet18(models.ResNet):
         return x
 
 if __name__=='__main__':
-    path = '../UTKFace/9_1_4_20170103213057382.jpg.chip.jpg'
+    path = '../images/sample.jpg'
     model = FullyConvolutionalResnet18(pretrained=True).eval()
     original_image = cv2.imread(path)
     # Convert original image to RGB format
